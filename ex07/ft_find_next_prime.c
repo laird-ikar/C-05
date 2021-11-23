@@ -6,7 +6,7 @@
 /*   By: bguyot <bguyot@student.42mulhouse.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/18 07:44:56 by bguyot            #+#    #+#             */
-/*   Updated: 2021/11/23 08:51:27 by bguyot           ###   ########.fr       */
+/*   Updated: 2021/11/23 11:08:38 by bguyot           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,11 +29,13 @@ int	ft_find_next_prime(int nb)
 int	ft_is_prime_07(int nb)
 {
 	int	i;
+	int	sqrt_nb;
 
+	sqrt_nb = ft_sqrt_07(nb);
 	if (nb == 0 || nb == 1)
 		return (0);
 	i = 2;
-	while (i < ft_sqrt_06(nb))
+	while (i < sqrt_nb)
 	{
 		if (!(nb % i))
 			return (0);
