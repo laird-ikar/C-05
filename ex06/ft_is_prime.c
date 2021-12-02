@@ -6,7 +6,7 @@
 /*   By: bguyot <bguyot@student.42mulhouse.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/17 13:33:54 by bguyot            #+#    #+#             */
-/*   Updated: 2021/11/23 11:09:09 by bguyot           ###   ########.fr       */
+/*   Updated: 2021/12/02 13:16:16 by bguyot           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ int	ft_is_prime(int nb)
 	int	i;
 	int	sqrt_nb;
 
-	if (nb == 0 || nb == 1)
+	if (nb < 2)
 		return (0);
 	i = 2;
 	sqrt_nb = ft_sqrt_06(nb);
